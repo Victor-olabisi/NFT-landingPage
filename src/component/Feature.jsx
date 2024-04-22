@@ -16,16 +16,16 @@ const Feature = () => {
               {nftFeatured.map((feature) => {
                   const {id, image,eth}=feature
                   return (
-                    <article className="bg-white p-[1rem] rounded-xl">
+                    <article className="bg-white p-[1rem] rounded-xl w-[100%] sm:w-[auto]">
                       <img
                         src={image}
                         alt=""
-                        className="h-[20rem] w-[20rem]  xl:w-[23rem] lg:h-[25rem] rounded-xl"
+                        className="h-[23rem] w-[100%] object-cover  xl:w-[23rem] lg:h-[25rem] rounded-xl"
                       />
                       <h4 className="text-xl font-bold text-[#242323] mt-4">
                         ArtCrypto
                       </h4>
-                      <div className="flex justify-between ">
+                      <div className="flex justify-between border-b-">
                         <h6 className="flex mt-4">
                           <img
                             src={featuredIcon}
@@ -39,6 +39,12 @@ const Feature = () => {
                         <p className="mt-5 text-[.8rem] text-[#989898]">
                           1 of 32
                         </p>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <p className="text-[#545454] text-sm">3h25m3s</p>
+                        <button className="bg-black text-white px-[1.3rem] py-[.7rem] rounded-full text-sm">
+                          place a bid
+                        </button>
                       </div>
                     </article>
                   );
