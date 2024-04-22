@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 
+.art-1::before {
+    display: relative;
+    content: ' v';
+    position: absolute;
+    background: yellow;
+transform: translateX(-10%);
+margin-left: 2rem;
+    
+    /* z-index: ; */
+    height: 13rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    top: 0;
+    left: 0;
+}
+
+.art-img{
+    z-index: 12;
+}

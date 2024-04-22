@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       {/* <h3 className={`text-5xl uppercase font-bold text-blue-100 `}>nft project</h3> */}
-      <section className={` bg-[#0D0D0E] h-[200vh]`}>
+      <section className={` bg-[#0D0D0E] h-[200vh overflow-x-hidden`}>
         <div className={`${styles.marginX}  ${styles.boxWidth} bg-[#0D0D0E]`}>
           <Navbar />
           <Hero/>

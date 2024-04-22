@@ -1,6 +1,6 @@
 const styles = {
-    boxWidth: 'max-w-[1550px] mx-auto',
-    marginX: 'mx-[1.6rem]',
+    boxWidth: 'max-w-[1400px] mx-auto',
+    marginX: 'mx-[2rem]',
     marginY:'my-[5rem]'
         
 }
