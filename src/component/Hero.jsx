@@ -3,10 +3,11 @@ import { FaArrowDown } from "react-icons/fa6";
 import artImg1 from '../assets/artImg1.png'
 import artImg2 from "../assets/artImg2.jpg";
 import art from '../assets/art.svg'
+import styles from '../styles';
 
 const Hero = () => {
   return (
-    <section className="sm:mt-[80px] mt-[60px]">
+    <section className={`sm:mt-[80px] mt-[60px] ${styles.marginY}`}>
       <div>
         <div className="text-center ">
           <h2 className="text-[#BABABA]  font-light text-[1.6rem] uppercase  sm:text-[2.5rem]">

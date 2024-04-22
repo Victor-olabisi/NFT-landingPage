@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './styles'
-import { Navbar, Hero } from './component';
+import { Navbar, Hero,Feature } from './component';
 Navbar
 function App() {
  
@@ -11,7 +11,8 @@ function App() {
       <section className={` bg-[#0D0D0E] h-[200vh overflow-x-hidden`}>
         <div className={`${styles.marginX} ${styles.boxWidth} bg-[#0D0D0E]`}>
           <Navbar />
-          <Hero/>
+          <Hero />
+          <Feature/>
         </div>
       </section>
     </>

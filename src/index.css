@@ -7,7 +7,7 @@
     display: relative;
     content: ' ';
     position: absolute;
-    background: #191919;
+    background: white;
 transform: translateX(-10%);
 margin-left: 2rem;
     
