@@ -5,9 +5,9 @@
 
 .art-1::before {
     display: relative;
-    content: ' v';
+    content: ' ';
     position: absolute;
-    background: yellow;
+    background: #191919;
 transform: translateX(-10%);
 margin-left: 2rem;
     
