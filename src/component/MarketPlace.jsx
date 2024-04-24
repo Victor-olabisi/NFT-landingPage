@@ -55,13 +55,13 @@ const MarketPlace = () => {
                     <SwiperSlide>
                       <article
                         // key={id}
-                        className="bg-[#222323] p-[1rem] rounded-xl overflow-hidden max-w-[30rem] "
+                        className="bg-[#222323] p-[.7rem] rounded-xl overflow-hidden max-w-[30rem] "
                       >
-                        <img src={image} alt="" />
+                        <img src={image} className="h-[15rem] w-[100%] sm:h-auto" alt="" />
                         <h3 className="text-white capitalize  text-2xl font-bold mt-4">
                           {title}
                         </h3>
-                        <p className="text-[#9E9E9E] mt-2">{text}</p>
+                        <p className="text-[#9E9E9E] mt-2 text-sm sm:text-lg">{text}</p>
                         <div className="flex gap-x-6">
                           <div className="text-white  grid ">
                             <span className="capitalize mt-4 ">volume</span>
