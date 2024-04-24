@@ -12,9 +12,9 @@ const Footer = () => {
           const { id, star, name, image } = creator;
           return (
             <div className="bg-[#212122] p-[1rem] pr-[5rem] w-[100%] sm:w-[45%] lg:w-[30%] rounded-full flex gap-x-[1rem]">
-              <img src={image} alt="" className="h-[4rem]" />
+              <img src={image} alt="" className="h-[3rem]" />
               <div>
-                <h4>{name}</h4>
+                <h4 className="font-bold capitalize">{name}</h4>
                 <span>{star}</span>
               </div>
             </div>
