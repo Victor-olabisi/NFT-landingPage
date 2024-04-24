@@ -4,6 +4,7 @@ import artImg1 from '../assets/artImg1.png'
 import artImg2 from "../assets/artImg2.jpg";
 import art from '../assets/art.svg'
 import styles from '../styles';
+import { useState } from 'react';
 
 const Hero = () => {
   return (
@@ -44,7 +45,7 @@ const Hero = () => {
             <FaArrowDown />
           </span>
           <div className="text-white opacity-50 max-w-[25rem]">
-            <p className="mb-4">
+            <p className="mb-4 ">
               are you ready to explore the limitless possibilities of artificial
               intelligence? look no further! STARX is your one stop destination
               for all things AI{" "}
@@ -56,24 +57,24 @@ const Hero = () => {
           </div>
         </div>
         <div className="grid gap-y-8">
-          <div className="uppercase text-5xl text-white mb-8  lg:text-right ">
+          <div className="uppercase text-4xl sm:text-5xl text-white mb-8  lg:text-right ">
             <h3 className="font-bold mb-2">collect super</h3>
             <h3 className="font-light ">rare digital art</h3>
           </div>
-          <div className="flex ">
+          <div className="flex translate-x-[-10%] sm:translate-x-0 ">
             <div className="relative art-container ">
               <div className="art-1 z-10 ">
                 <img
                   src={artImg1}
                   alt=""
-                  className="h-[17rem]  art-img md:h-auto translate-x-[17%] lg:translate-x-[17%]"
+                  className="h-[13rem]  art-img sm:h-[17rem] md:h-[500px] lg:h-aut translate-x-[17%] lg:translate-x-[17%]"
                 />
               </div>
             </div>
 
             <img
               src={artImg2}
-              className=" h-[13rem] md:h-[397px]  rounded-xl"
+              className=" h-[10rem] sm:h-[14rem] md:h-[397px]  rounded-xl"
               alt=""
             />
           </div>
