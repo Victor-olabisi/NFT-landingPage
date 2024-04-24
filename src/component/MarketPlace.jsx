@@ -35,7 +35,7 @@ const MarketPlace = () => {
         </div>
         {/* <div className="grid gap-y-4"> */}
           <Swiper
-            spaceBetween={50}
+            spaceBetween={20}
                   slidesPerView={1}
                   autoplay={{
                       delay: 3000,
@@ -57,7 +57,7 @@ const MarketPlace = () => {
                         // key={id}
                         className="bg-[#222323] p-[.7rem] rounded-xl overflow-hidden max-w-[30rem] "
                       >
-                        <img src={image} className="h-[15rem] w-[100%] sm:h-auto" alt="" />
+                        <img src={image} className="h-[13rem] object-cover w-[100%] sm:h-auto" alt="" />
                         <h3 className="text-white capitalize  text-2xl font-bold mt-4">
                           {title}
                         </h3>
