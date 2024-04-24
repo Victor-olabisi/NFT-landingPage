@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './styles'
-import { Navbar, Hero,Feature, MarketPlace } from './component';
+import { Navbar, Hero,Feature, MarketPlace,Footer } from './component';
 Navbar
 function App() {
  
@@ -16,6 +16,9 @@ function App() {
         </div>
         <div className={`bg-[#121212] ${styles.marginX} ${styles.boxWidt}`}>
           <MarketPlace />
+        </div>
+        <div className={`${styles.marginX} ${styles.boxWidth} bg-[#0D0D0E]`}>
+        <Footer/>
         </div>
       </section>
     </>

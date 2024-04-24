@@ -6,6 +6,9 @@ import feature3 from "./assets/feature3.jpg";
 import marketPlace1 from './assets/marketplace1.png'
 import marketPlace2 from "./assets/marketplace2.png";
 
+import creator2 from './assets/Wallet2.png'
+import creator3 from './assets/Wallet3.png'
+import creator1 from './assets/Wallet.png'
 
 
 export const nftFeatured = [
@@ -60,3 +63,28 @@ export const marketPlace = [
     flow: "O.O58ETH",
   },
 ];
+
+export const  creators = [
+
+  {
+    id: 1,
+    name:'john methew',
+    image:creator1,
+    star:'13.2k'
+  },
+   {
+    id: 2,
+     image: creator2,
+    name:'rema galod',
+    star:'23.4k',
+  },
+    {
+    id: 1,
+      image: creator3,
+    name:'seema aggrawal',
+    
+    star:'45.9k'
+  },
+]
+
+

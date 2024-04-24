@@ -57,18 +57,28 @@ const MarketPlace = () => {
                         // key={id}
                         className="bg-[#222323] p-[.7rem] rounded-xl overflow-hidden max-w-[30rem] "
                       >
-                        <img src={image} className="h-[13rem] object-cover w-[100%] sm:h-auto" alt="" />
-                        <h3 className="text-white capitalize  text-2xl font-bold mt-4">
+                        <img
+                          src={image}
+                          className="h-[13rem] object-cover w-[100%] sm:h-auto"
+                          alt=""
+                        />
+                        <h3 className="text-white capitalize  text-xl sm:text-2xl font-bold mt-4">
                           {title}
                         </h3>
-                        <p className="text-[#9E9E9E] mt-2 text-sm sm:text-lg">{text}</p>
+                        <p className="text-[#9E9E9E] mt-2 text-sm sm:text-lg">
+                          {text}
+                        </p>
                         <div className="flex gap-x-6">
                           <div className="text-white  grid ">
-                            <span className="capitalize mt-4 ">volume</span>
+                            <span className="capitalize mt-4 text-[13px] ">
+                              volume
+                            </span>
                             {volume}
                           </div>
                           <div className="text-white  grid ">
-                            <span className="capitalize mt-4 ">flow</span>
+                            <span className="capitalize mt-4 text-[13px] ">
+                              flow
+                            </span>
                             {flow}
                           </div>
                         </div>
