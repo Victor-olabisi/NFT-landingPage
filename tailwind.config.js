@@ -17,6 +17,10 @@ export default {
           "100%": { transform: "translateX(0%)" },
         },
       },
+      screens: {
+        xsm: "414px",
+       
+      },
     },
   },
   plugins: [],

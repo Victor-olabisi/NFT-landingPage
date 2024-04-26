@@ -4,10 +4,13 @@ import art from '../assets/art.svg'
 import styles from '../styles';
 import { useState } from 'react';
 import InfiniteScroll from './InfiniteScroll';
+const categories = ['Create', 'Explore', 'Sell', 'Drops', 'Try StarX NFT']
+
 
 const Hero = () => {
+  const [active, setActive] = useState(0)
   return (
-    <section className={`sm:mt-[80px] mt-[60px] ${styles.marginY}`}>
+    <section className={`sm:mt-[80px] mt-[60px] ${styles.margin}`}>
       <div>
         <div className="text-center ">
           <h2 className="text-[#BABABA]  font-light text-[1.6rem] uppercase  sm:text-[2.5rem]">
@@ -29,16 +32,27 @@ const Hero = () => {
           <img
             src={heroImg}
             alt="nft  image"
-            className=" w-[760px]  md:h-[530px] rounded-xl"
+            className=" w-[760px]  md:h-[530px] rounded-xl z-index-10 "
           />
         </div>
       </div>
-      <div className="max-w-[1300px] hidden lg:mt-[-220px] mx-auto h-[100px] bg-black opacity-30 px-[1rem] items-center rounded-full flex ">
-        <div className="bg-white opacity-70 inline-block py-[1.7rem]  rounded-full px-[3rem] text-white">
-          create
+      <div className='flex items-start '>
+        <div className="  lg:mt-[-210px] mx-auto p-[.5rem] bg-[#26282A] relative z-index-2 opacity-3  items-center rounded-full  gap-x-2 justify-center z-index-100 hidden lg:flex ">
+          {categories.map((category,index) => {
+            return (
+              <div
+                key={category}
+                onClick={() => setActive(index)}
+                className={`  inline-block py-[1.4rem] cursor-pointer  rounded-full px-[3rem] text- ${
+                  active == index ? "bg-white text-black" : "bg-[#454648] text-white"
+                }`}
+              >
+                {category}
+              </div>
+            );
+          })}
         </div>
       </div>
-      
     </section>
   );
 }

@@ -32,7 +32,7 @@ const Feature = () => {
                       <img
                         src={image}
                         alt=""
-                        className="h-[15rem] w-[100%] object-cover object-top  xl:w-[23rem] lg:h-[25rem] rounded-xl"
+                        className="h-[15rem] w-[100%] xsm:h-[20rem] object-cover object-top  xl:w-[23rem] lg:h-[25rem] rounded-xl"
                       />
                       <h4 className="text-xl font-bold text-[#242323] mt-4">
                         ArtCrypto

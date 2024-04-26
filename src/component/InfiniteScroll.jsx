@@ -3,7 +3,7 @@ import star from '../assets/Star 2.svg'
 
 const InfiniteScroll = () => {
     return (
-      <div className={`w-[100%] bg-[#2F3032] !max-w-auto mb-[5rem] mt-[3rem]`}>
+      <div className={`w-[100%] bg-[#2F3032] !max-w-auto mb-[5rem] `}>
         {/* <div className={`text-white`}> */}
         <div className="relative flex overflow-x-hidden text-white ">
           <div className="py-4 animate-marque whitespace-nowrap text-7xl">
@@ -34,4 +34,4 @@ const InfiniteScroll = () => {
       </div>
     );
 }
-export default InfiniteScroll
+export default InfiniteScroll 
